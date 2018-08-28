@@ -11,6 +11,7 @@ Use the .describe() method on the dataset
 Slice the dataset using [2:4, 'col3']
 Note: If Pandas complains about not being able to find the tutorial file, just use the full system path to it rather than a relative path. All paths mentioned in this course are in reference to the Module directory produced by unzipping the course material file.
 
+----------------------------
 
 Lab Assignment 3
  Bookmark this page
@@ -23,6 +24,7 @@ Your mission, should you choose to accept, is to figure out a few stats about th
 
 Note: Before submitting, double check your work. Peek at the first few entries of your dataset, by opening up servo.data with a text editor. After that, use the appropriate command to look at the first few entries of your dataframe; do they match? If it's not a precise match, there might be a few useful parameters in the read_csv() api documentation that will fix your issue!
 
+----------------------------
 
 Lab Assignment 4
  Bookmark this page
@@ -35,6 +37,7 @@ Get rid of the RK column.
 Ensure there are no nan "holes" in your index.
 Check the dtypes of all columns, and ensure those that should be numeric are numeric.
 
+----------------------------
 
 Lab Assignment 5
  Bookmark this page
