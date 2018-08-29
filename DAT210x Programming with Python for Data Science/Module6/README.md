@@ -60,6 +60,7 @@ In this lab, you'll get started with decision trees by revisiting UCI's wheat-se
 Lab Assignment 5
 
 Mycology is a branch of biology that generally deals with the study of fungi and mushrooms, and particularly their genetic and biochemical make-up, and their use to humans. Throughout history, fungi have been used for tinder, medicine, and food. For hundreds of years, specific mushrooms have been used as folk medicine in Russian, China, and Japan. Scientists elsewhere have also documented many medicinal uses of mushrooms as well, but not all mushrooms are beneficial--some are quite deadly.
+
 ![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/15641a1802d294403454d1b8b5620469/asset-v1:Microsoft+DAT210x+1T2018a+type@asset+block/M7L4_Mushroom.jpg)
 
 
@@ -75,7 +76,7 @@ As a standard disclaimer, if you eat a random mushroom you find, you are doing s
 ----------------------------
 
 Lab Assignment 6
- Bookmark this page
+
 Human activity monitoring is a growing field within data science. It has practical use within the healthcare industry, particular with tracking the elderly to make sure they don't end up doing things which might cause them to hurt themselves. Governments are also very interested in it do that they can detect unusual crowd activities, perimeter breaches, or the identification of specific activities, such as loitering, littering, or fighting. Fitness apps also make use of activity monitoring to better estimate the amount of calories used by the body during a period of time.
 
 In this lab, you will be training a random forest against a public domain Human Activity Dataset titled Wearable Computing: Accelerometers' Data Classification of Body Postures and Movements, containing 165,633, one of which is invalid. Within the dataset, there are five target activities:
