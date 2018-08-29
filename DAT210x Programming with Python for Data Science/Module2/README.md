@@ -57,7 +57,7 @@ As clean as the data is, it still isn't quite ready for analysis by SciKit-Learn
 
 - Load up the dataset and set header label names to: ['education', 'age', 'capital-gain', 'race', 'capital-loss', 'hours-per-week', 'sex', 'classification']
 
--Ensure you use the right command to do this, as there is more than one command! To verify you used the correct one, open the dataset in a text editor like SublimeText or Notepad, and double check your df.head() to ensure the first values match up.
+- Ensure you use the right command to do this, as there is more than one command! To verify you used the correct one, open the dataset in a text editor like SublimeText or Notepad, and double check your df.head() to ensure the first values match up.
 
 - Make sure any value that needs to be replaced with a NAN is set as such. There are at least three ways to do this. One is much easier than the other two.
 
