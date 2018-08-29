@@ -29,3 +29,13 @@ You're not quite done with chronic kidney disease yet—we still need to beat it
 Head back over to the dataset page (or you can look at the kidney_disease.names file in your /Module4/Datasets/ directory). Each column has a type listed, e.g. numeric, nominal, etc. We've included a formatted list of the nominal features below. Instead of using an indexer to select just the bgr, rc, and wc, alter your assignment code to drop all the nominal features, which we've listed below for your copy and pasting pleasure. Be sure you select the right axis for columns and not rows, otherwise Pandas will complain! ['id', 'classification', 'rbc', 'pc', 'pcc', 'ba', 'htn', 'dm', 'cad', 'appet', 'pe', 'ane']
 Print out your dataset's dtypes, inspect the results. Does everything look like it should / properly numeric encoded? If not, make code changes to coerce the remaining column(s).
 Run your assignment and then answer the questions below.
+
+------------------------------
+
+Lab Assignment 4
+
+After having a brief conversation with Joshua Tenenbaum, the primary creator of the isometric feature mapping algorithm, it only seems right that we make your first lab assignment be replicating his canonical, dimensionality reduction research experiment for visual perception! In fact, you will also be using his original dataset (cached website) from December 2000. It consists of 698 samples of 4096-dimensional vectors. These vectors are the coded brightness values of 64x64-pixel heads that have been rendered facing various directions and lighted from many angles. Replicate Dr. Tenenbaum's experiment by:
+
+- Applying both PCA and Isomap to the 698 raw images to derive 2D principal components and a 2D embedding of the data's intrinsic geometric structure.
+- Project both onto a 2D scatter plot, with a few superimposed face images on the associated samples.
+- Extra: If you're feeling fancy, increase n_components to three, and plot your scatter plot on a 3D chart.
