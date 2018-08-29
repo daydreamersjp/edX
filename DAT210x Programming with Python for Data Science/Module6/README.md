@@ -27,3 +27,21 @@ Let's see if it is possible for you to train a support vector classifier on your
 - Make the requisite changes to get the project running, by providing the path to the .tes and .tra files.
 - Train your SVC classifier with the parameters provided, and keep testing until you're able to beat the classification abilities of the USPS.
 - Remember how important having a lot of samples is for machine learning? Try tossing out 96% of your samples, and see how it affects the accuracy of your highest accuracy support vector classifier.
+
+------------------------------
+
+Lab Assignment 3
+
+Growing up, everyone has a hero. For many people, that hero was Muhammad Ali. He taught people it was okay to be proud of who they were, at a time when others would not accept that. He showed people how to stand up for their beliefs in the face of oppression and tyranny. He made people value themselves, and encouraged them care for those around them. He showed us what bravery truly meant, how to be a heck of a boxer, and so much more. Every single person who met Muhammad Ali, either in the ring or outside of it, had a motivating story to share about their encounter.
+
+On June 3, 2016, Muhammad Ali passed away at the age of 74 due to septic shock. Thirty years earlier, he was diagnosed with Parkinson's syndrome, a neurodegenerative condition that doctors attributed to his boxing-related brain injuries.
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/505c341c4239e7d684c4caf5614e367d/asset-v1:Microsoft+DAT210x+1T2018a+type@asset+block/M7L2_MuhammadAli.png)
+
+
+Parkinson's disease itself is a long-term disorder of the nervous system that affects many aspects of a person's mobility over time. It's characterized by shaking, slowed movement, rigidity, dementia, and depression. In 2013, some 53 million people were diagnosed with it, mostly men. Other famous personalities affected by it include actor Michael J. Fox, and olympic cyclist Davis Phinney.
+
+In this lab, you will be applying SVC to the Parkinson's Data Set, provided courtesy of UCI's Machine Learning Repository. The dataset was created at the University of Oxford, in collaboration with 10 medical centers around the US, along with Intel who developed the device used to record the primary features of the dataset: speech signals. Your goals for this assignment are first to see if it's possible to differentiate between people who have Parkinson's and who don't using SciKit-Learn's support vector classifier, and then to take a first-stab at a naive way of fine-tuning your parameters in an attempt to maximize the accuracy of your testing set.
+
+"I've never really resented hard work because I've always liked it. Up every morning for roadwork. Going to the gymnasium every day at 12 o'clock. I never change my pattern."
+
+In honor of Muhammad Ali and hard work, there is no starter code for this lab. Just follow the instructions below.
