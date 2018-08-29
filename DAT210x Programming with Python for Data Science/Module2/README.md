@@ -59,10 +59,10 @@ As clean as the data is, it still isn't quite ready for analysis by SciKit-Learn
 
 -Ensure you use the right command to do this, as there is more than one command! To verify you used the correct one, open the dataset in a text editor like SublimeText or Notepad, and double check your df.head() to ensure the first values match up.
 
--Make sure any value that needs to be replaced with a NAN is set as such. There are at least three ways to do this. One is much easier than the other two.
+- Make sure any value that needs to be replaced with a NAN is set as such. There are at least three ways to do this. One is much easier than the other two.
 
--Look through the dataset and ensure all of your columns have appropriate data types. Numeric columns should be float64 or int64, and textual columns should be object.
+- Look through the dataset and ensure all of your columns have appropriate data types. Numeric columns should be float64 or int64, and textual columns should be object.
 
--Properly encode any ordinal features using the method discussed in the chapter.
+- Properly encode any ordinal features using the method discussed in the chapter.
 
--Properly encode any nominal features by exploding them out into new, separate, boolean features.
+- Properly encode any nominal features by exploding them out into new, separate, boolean features.
