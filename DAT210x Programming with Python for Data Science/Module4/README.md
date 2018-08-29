@@ -1,7 +1,7 @@
 Lab Assignment 1
 
 In this assignment, you're going to experiment with a real life armadillo sculpture scanned using a Cyberware 3030 MS 3D scanner at Stanford University. The sculpture is available as part of their 3D Scanning Repository, and is a very dense 3D mesh consisting of 172974 vertices! The mesh is available for you, located at /Module4/Datasets/stanford_armadillo.ply in the course github repository. It is not a Python script file, so don't attempt to load it with a text editor!
-![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/f83af0bb88f3f2b258d91f9575c1cc07/asset-v1:Microsoft+DAT210x+1T2018a+type@asset+block/M5L3-Armadillo.png)
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/f83af0bb88f3f2b258d91f9575c1cc07/asset-v1:Microsoft+DAT210x+1T2018a+type@asset+block/M5L3-Armadillo.png size=0.5)
 
 
 Start up Jupyter and open up the Module4/Module4 - Lab1.ipynb starter code in your browser, then read through it carefully. You will notice the use of a new library, Plyfile. This library loads up the 3D binary mesh for you. The mesh is further converted into a Pandas dataframe for your ease of manipulation.
