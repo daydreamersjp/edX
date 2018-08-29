@@ -86,6 +86,7 @@ In this lab, you will be training a random forest against a public domain Human 
 - Standing
 - Standing Up
 - Walking
+
 These activities were captured from four people wearing accelerometers mounted on their waist, left thigh, right arm, and right ankle. To get started:
 
 - Acquire the DLA HAR Dataset from their webpage. Be sure to get the dataset-har-PUC-Rio-ugulino.zip file and not the weight lifting one. That's a bonus dataset you can try fitting afterwards! If the GroupWare website is down, we have a cached copy of the dataset in the course repo.
