@@ -115,3 +115,38 @@ Using linear regression, you will extrapolate how long people will live in the f
 - Fit your model, draw a regression line and scatter plot with the convenience function, and then print out the actual, observed 2015 White Male life expectancy value from the dataset.
 - Repeat for BlackFemale.
 - Print out and display a correlation matrix for the dataset's features.
+
+--------------------------------
+
+Lab Assignment 9
+
+Continue your exploration of linear regression using a public dataset provided courtesy of An Introduction to Statistical Learning, called College Acceptance and Enrollment. There are four relationships we are interested in modeling:
+
+- The amount charged for room and board, expressed as a function of the number of: accepted students
+- The number of enrolled students per college, expressed as a function of the number of: accepted students
+- The number of failed undergraduate students per college, expressed as a function of: the number of accepted students
+- The amount charged for room and board coupled with the number of enrolled students, expressed as a function of: the number of accepted students.
+
+You should be able to find these relationships given the dataset. Start by downloading the data directly from this link, or through navigating the site linked above, and then complete the following actions:
+
+- Read through the /Module5/Module5 - Lab9.ipynb starter code file. It's pretty long, but there actually isn't much in terms of coding you have to do. The hard part is in understanding the material.
+- Load up the dataset, then use indexing to slice out the features of it we're interested in examining.
+- Split your data into training and testing.
+- Use the helper drawLine() and drawPlane() methods to display the results
+
+----------------------------
+
+Lab Assignment 10
+ Bookmark this page
+Enhance! You've probably seen a movie or TV show where the super spy agents use some unbelievable technique to enhance a pixelated image, or to recover some lossy data. In this lab, you're going to do something similar—this time your objective is to use linear regression to recover or 'fill out' a completely deleted portion of an audio file!
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/4c324d19171f8d1fb25e59c58f0957eb/asset-v1:Microsoft+DAT210x+1T2018a+type@asset+block/M6L7_Soundwave.png)
+
+
+- To complete this lab, you will be using The FSDD, Free-Spoken-Digits-Dataset, an audio dataset put together by Zohar Jackson once he noticed there weren't very many cleaned up audio (no dead-space, roughly same length, same bitrate, same samples-per-second rate, etc) audio libraries ready for machine learning.
+
+- Load up the started code stored at Module5/Module5 - Lab10.ipynb. Read through all of it, including the attached links. There are a lot of gems we'd like you to pick up that are only covered in the labs and not covered in detail in the course reading material, so be sure to make the most of it.
+- There is a variable called Provided_Portion, which is the percentage of the audio clip you'd like to keep. Everything else will be deleted. It's currently set to 25%, so leave it there until you've completed and submitted the assignment; then you can experiment with it.
+- Load up 50 sample recordings per specification in the lab file.
+- Manipulate the dataset to prepare it for multi-output, linear regression by removing one of the images from the training set to use it as an independent testing sound. Then keep only Provided_Portion percent of the audio samples from the sound, discarding the rest.
+- Save the generated sound file, listen to it, check its R^2 score.
+Note: Here is a good note from SciKit-Learn's documentation on multi-output problems.
