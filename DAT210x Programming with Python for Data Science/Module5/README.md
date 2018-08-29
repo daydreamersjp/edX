@@ -137,8 +137,9 @@ You should be able to find these relationships given the dataset. Start by downl
 ----------------------------
 
 Lab Assignment 10
- Bookmark this page
+
 Enhance! You've probably seen a movie or TV show where the super spy agents use some unbelievable technique to enhance a pixelated image, or to recover some lossy data. In this lab, you're going to do something similar—this time your objective is to use linear regression to recover or 'fill out' a completely deleted portion of an audio file!
+
 ![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/4c324d19171f8d1fb25e59c58f0957eb/asset-v1:Microsoft+DAT210x+1T2018a+type@asset+block/M6L7_Soundwave.png)
 
 
