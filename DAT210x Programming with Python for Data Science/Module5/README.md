@@ -69,6 +69,7 @@ In this assignment, you'll flex your understanding of Isomap and KNeighbors, as 
 This assignment was engineered to be truer to the life of a data scientist by being more challenging than previous ones, so do not be disheartened. If data explorers only needed to drop their observations into black-box algorithms without investing time to toggle parameters, and experiment and understand what those algorithms were truly doing to their data, they wouldn't be valued as much.
 
 In module four's fourth lab assignment, you explored using isomap, an indispensable tool to have while working with non-linear datasets. Your goal this time is to train the KNeighborsClassifier to identify what direction a face is pointing towards: either up, down, left, or right.
+
 ![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/db4094ea4712d0082cd24971423c1511/asset-v1:Microsoft+DAT210x+1T2018a+type@asset+block/M6L5_Faces.png)
 
 
