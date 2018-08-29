@@ -5,13 +5,13 @@ This time, you're going to attempt to load your first csv dataset! Open up the s
 jupyter notebook
 This should launch your browser showing you all of the Module folders for this course. Navigate into the Module2 folder and open up the Lab2 notebook. Read through it and follow the directions to:
 
--Load up Module2/Datasets/tutorial.csv
+- Load up Module2/Datasets/tutorial.csv
 
--Print the entire dataframe, using print df
+- Print the entire dataframe, using print df
 
--Use the .describe() method on the dataset
+- Use the .describe() method on the dataset
 
--Slice the dataset using [2:4, 'col3']
+- Slice the dataset using [2:4, 'col3']
 
 Note: If Pandas complains about not being able to find the tutorial file, just use the full system path to it rather than a relative path. All paths mentioned in this course are in reference to the Module directory produced by unzipping the course material file.
 
@@ -35,17 +35,17 @@ Lab Assignment 4
 
 Navigate over to ESPN's website for NHL Historic Player Points Statistics, for the years 2014-2015. This page has a table on it with a few stats we're interested in obtaining. But it's a bit messy! Clean it up for us, using the appropriate commands to:
 
--Load up the table on just this page into a Pandas dataframe. No need to worry about the other pages!
+- Load up the table on just this page into a Pandas dataframe. No need to worry about the other pages!
 
--Rename the columns so that they match the column definitions on the website.
+- Rename the columns so that they match the column definitions on the website.
 
--Get rid of (drop) any erroneous rows that has at least 4 NANs in them.
+- Get rid of (drop) any erroneous rows that has at least 4 NANs in them.
 
--Get rid of the RK column.
+- Get rid of the RK column.
 
--Ensure there are no nan "holes" in your index.
+- Ensure there are no nan "holes" in your index.
 
--Check the dtypes of all columns, and ensure those that should be numeric are numeric.
+- Check the dtypes of all columns, and ensure those that should be numeric are numeric.
 
 ----------------------------
 
@@ -55,7 +55,7 @@ Barry Becker extracted a reasonably clean subset of the 1994, U.S. Census databa
 
 As clean as the data is, it still isn't quite ready for analysis by SciKit-Learn! Using what you've learned in this chapter, clean up the various columns by encode them properly using the best practices so that they're ready to be examined. We've included a modifies subset of the dataset at Module2/Datasets/census.data and also have some started code to get you going located at Module2/Module2 - Lab5.ipynb.
 
--Load up the dataset and set header label names to: ['education', 'age', 'capital-gain', 'race', 'capital-loss', 'hours-per-week', 'sex', 'classification']
+- Load up the dataset and set header label names to: ['education', 'age', 'capital-gain', 'race', 'capital-loss', 'hours-per-week', 'sex', 'classification']
 
 -Ensure you use the right command to do this, as there is more than one command! To verify you used the correct one, open the dataset in a text editor like SublimeText or Notepad, and double check your df.head() to ensure the first values match up.
 
