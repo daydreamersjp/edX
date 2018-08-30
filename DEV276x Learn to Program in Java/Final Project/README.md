@@ -91,6 +91,5 @@ Watch out! There's a pit ahead, jump it?
 
 The user should be able to enter in any string that starts with a "y". If they enter in anything else it will be assumed they do not want to jump the pit so they should be asked again Where they would like to move. Here is an example of what your code should do when it encounters a pit:
 
-![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/24822daebc10bb83eeee7a352efce705/asset-v1:Microsoft+DEV276x+2T2018+type@asset+block/4-mazePit1.png)
-![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/b0e0490d3a6de84973fe0e41ae79a0f4/asset-v1:Microsoft+DEV276x+2T2018+type@asset+block/5-mazePit2.png)
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/24822daebc10bb83eeee7a352efce705/asset-v1:Microsoft+DEV276x+2T2018+type@asset+block/4-mazePit1.png) ![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/b0e0490d3a6de84973fe0e41ae79a0f4/asset-v1:Microsoft+DEV276x+2T2018+type@asset+block/5-mazePit2.png)
 
