@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class MazeRunner {
+public class MazeRunner_p1 {
   
   public static void main(String[] args) {
     Maze myMap = new Maze();
