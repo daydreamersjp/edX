@@ -14,6 +14,7 @@ should return
 
 “THISISSOMEREALLYGREATTEXT”
 
+
 ### Part 2 - Caesar Cipher
 Next we’ll be writing a Caesar Cipher. The Caesar cipher is just about the simplest encryption algorithm out there. A Caesar encription "shifts" each individual character forward by a certain number or "key". Each letter in the alphabet is shifted to the letter in the alphabet that is "key" places past the original letter. With a shift value of +1, the string “ILIKEZOOS” would be rendered as “JMJLFAPPT.”
 
@@ -44,14 +45,16 @@ public static String shiftAlphabet(int shift) {
     }
     return result;
 }
-Part 3 - Codegroups
+
+### Part 3 - Codegroups
 Traditionally, encrypted messages are broken into equal-length chunks, separated by spaces and called “code groups.”
 
 Write a method called groupify which takes two parameters. The first parameter is the string that you want to break into groups. The second argument is the number of letters per group. The function will return a string, which consists of the input string broken into groups with the number of letters specified by the second argument. If there aren’t enough letters in the input string to fill out all the groups, you should “pad” the final group with x’s. So groupify(“HITHERE”, 2) would return “HI TH ER Ex”.
 
 You may assume that the input string is normalized.
 Note that we use lower-case ‘x’ here because it is not a member of the (upper-case) alphabet we’re working with. If we used upper-case ‘X’ here we would not be able to distinguish between an X that was part of the code and a padding X.
-Part 4 - Putting it all together
+
+### Part 4 - Putting it all together
 Write a function called encryptString which takes three parameters: a string to be encrypted, an integer shift value, and a code group size. Your method should return a string which is its cyphertext equivalent. Your function should do the following:
 
 Call normalizeText on the input string.
@@ -59,7 +62,8 @@ Call obify to obfuscate the normalized text.
 Call caesarify to encrypt the obfuscated text.
 Call groupify to break the cyphertext into groups of size letters.
 Return the result
-Part 5 - Hacker Problem - Decrypt
+
+### Part 5 - Hacker Problem - Decrypt
 This part is not required for course credit.
 
 Write a method called ungroupify which takes one parameter, a string containing space-separated groups, and returns the string without any spaces. So if you call ungroupify(“THI SIS ARE ALL YGR EAT SEN TEN CEx”) you will return “THISISAREALLYGREATSENTENCE”
