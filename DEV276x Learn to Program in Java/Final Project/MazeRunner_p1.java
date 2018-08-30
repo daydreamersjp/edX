@@ -21,10 +21,10 @@ public class MazeRunner_p1 {
     String move = input.next();
     if (move != "R" && move != "L" && move != "U" && move != "D") {
       System.out.println("Oops, wrong input. Try again!");
-      user_move();
+      user_move(myMap);
     } else if ( (move == "R" && myMap.canIMoveRight() == false) || (move == "L" && myMap.canIMoveLeft() == false) || (move == "U" && myMap.canIMoveUp() == false) || (move == "D" && myMap.canIMoveDown() == false) ){
       System.out.println("Sorry, you’ve hit a wall.");
-      user_move();      
+      user_move(myMap);      
     } else if (move == "R") {
       myMap.moveRight();
       myMap.printMap();
@@ -42,7 +42,7 @@ public class MazeRunner_p1 {
     if (myMap.didIWin() == true) {
       System.out.println("Congratulations, you made it out alive!");
     } else {
-      user_move();
+      user_move(myMap);
     }
   }
 
