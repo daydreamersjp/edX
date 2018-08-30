@@ -45,9 +45,13 @@ Here is an example of what happens when the user tries to move onto a space, but
 7. If you find a direction you can move in- move there! To do that you’ll need the following methods:
 
 myMap.moveRight() // Moves your position one to the right and prints out the new board
+
 myMap.moveLeft() // Moves your position one to the left and prints out the new board
+
 myMap.moveUp() // Moves your position one above and prints out the new board
+
 myMap.moveDown() // Moves your position one below and prints out the new board
+
 
 After your user makes a move they will want an update on their location, you can use myMap.printMap() to print out the current state of the map. Here is an example of a successful move:
 
