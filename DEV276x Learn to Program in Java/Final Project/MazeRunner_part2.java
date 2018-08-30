@@ -1,11 +1,13 @@
 import java.util.Scanner;
 public class MazeRunner_part2 {
   
+  Maze myMap = new Maze();
+  
   public static void main(String[] args) {
-    Maze myMap = new Maze();
+    
     int moves = 0;
     intro();
-    user_move(myMap, move);
+    user_move(move);
     
   }
 
@@ -15,17 +17,17 @@ public class MazeRunner_part2 {
     myMap.printMap();
   }
 
-  public static void user_move(Maze myMap, int moves) {
+  public static void user_move(int moves) {
     String input = new Scanner();
     
     System.out.print("Where would you like to move? (R, L, U, D) ");
     String move = input.next();
     if (move != "R" && move != "L" && move != "U" && move != "D") {
       System.out.println("Oops, wrong input. Try again!");
-      user_move(myMap, moves);
+      user_move(moves);
     } else if ( (move == "R" && myMap.canIMoveRight() == false) || (move == "L" && myMap.canIMoveLeft() == false) || (move == "U" && myMap.canIMoveUp() == false) || (move == "D" && myMap.canIMoveDown() == false) ){
       System.out.println("Sorry, you’ve hit a wall.");
-      user_move(myMap, moves);      
+      user_move(moves);      
     } else if (move == "R") {
       myMap.moveRight();
       moves++;
@@ -54,7 +56,7 @@ public class MazeRunner_part2 {
     } else if (moves == 100) {
       System.out.println("Sorry, but you didn't escape in time- you lose!");
     } else {
-      user_move(myMap, moves);
+      user_move(moves);
     }
   }
   
