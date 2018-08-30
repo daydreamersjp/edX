@@ -59,7 +59,7 @@ Congratulations, you made it out alive!
 
 ## Part 2 – Move Limit
 
-Now that you have a basic Maze Runner, we’re going to make it a bit more difficult for your user. For Part 2 add the limitation that users will only have 100 steps to move before the exit to the maze closes! This means you need to keep track of how many moves a user makes. Create a new method called “movesMessage(moves)” that takes in an int representing the user’s current number of moves and produces these messages when the user hits the following milestones:
+Now that you have a basic Maze Runner, we’re going to make it a bit more difficult for your user. For Part 2 add the limitation that users will only have 100 steps to move before the exit to the maze closes! This means you need to keep track of how many moves a user makes. Create a new method called “**movesMessage(moves)**” that takes in an int representing the user’s current number of moves and produces these messages when the user hits the following milestones:
 
 | Number of Moves |	Message |
 | --------------- | ------- |
@@ -85,7 +85,7 @@ As you move through the maze you might come across pits. If your user moves onto
 myMap.isThereAPit("R") // Takes in the direction String the user entered in and returns if there is a pit ahead
 myMap.jumpOverPit("L") // Will jump over a pit in the direction given, skipping that space and landing 2 spaces over in the direction specified.
 
-All your code to handle a pit once it’s been detected should be put into a separate method called navigatePit(). When you find a pit, use the following test to ask the user what to do next:
+All your code to handle a pit once it’s been detected should be put into a separate method called **navigatePit()**. When you find a pit, use the following test to ask the user what to do next:
 
 Watch out! There's a pit ahead, jump it?
 
