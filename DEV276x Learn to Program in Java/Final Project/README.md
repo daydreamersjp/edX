@@ -1,6 +1,6 @@
 ## Final Project - Maze Runner
 
-For your final project you will be writing the code for "MazeRunner", a program that navigates through a given maze. The code for the Maze is already written, and provided in "Maze.java". You just need to write the code that uses Maze and decides how to move through it.
+For your final project you will be writing the code for "**MazeRunner**", a program that navigates through a given maze. The code for the Maze is already written, and provided in "Maze.java". You just need to write the code that uses Maze and decides how to move through it.
 
 ## Part 1 - Let the user solve the maze
 
