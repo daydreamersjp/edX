@@ -13,3 +13,4 @@ For this stage, you will need to do the following steps:
 Maze myMap = new Maze();
 
 4. Welcome the user to Maze Runner and show them the current state of the Maze. Separate this intro out into a separate method called "intro()".
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/c88e2a15f26778adb8a168073cc56d44/asset-v1:Microsoft+DEV276x+2T2018+type@asset+block/1-mazeStart.png)
