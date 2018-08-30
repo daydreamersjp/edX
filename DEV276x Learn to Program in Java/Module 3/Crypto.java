@@ -97,6 +97,10 @@ public class test {
         return res_str;
     }
 
-    public static String decycriptString(String str, int shift,  )
-        
+    public static String decycriptString(String str, int shift) {
+        String res_str="";
+        res_str = ungroupify(str);
+        res_str = caesarify(res_str, -shift);
+        return res_str;
+    }    
 }
