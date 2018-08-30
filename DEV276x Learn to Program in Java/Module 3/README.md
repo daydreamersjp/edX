@@ -20,8 +20,8 @@ Next we’ll be writing a Caesar Cipher. The Caesar cipher is just about the sim
 
 Write a method called caesarify that takes two parameters. The first argument is a string you want to encrypt, and the second is an integer that contains the shift value or "key". The function should return a string, which is the input string encrypted with the Caesar cypher using the shift value passed in its second argument. You may assume that the input string is normalized.
 
-Note that the alphabet “wraps around”, so with a shift value of +1 the “Z” in ZOOS became an A.
-You can also have negative shift values, which cause the alphabet to previous letters. With a -1 shift, the string “ILIKEAPPLES” would turn into “HKHJDZOOKDR.”
+- Note that the alphabet “wraps around”, so with a shift value of +1 the “Z” in ZOOS became an A.
+- You can also have negative shift values, which cause the alphabet to previous letters. With a -1 shift, the string “ILIKEAPPLES” would turn into “HKHJDZOOKDR.”
 We will provide you with a function called shiftAlphabet. This function takes one argument, an integer to specify the shift value, and returns a string, which is the uppercase alphabet shifted by the shift value. So if you call shiftAlphabet(2), you will get back the following string: “CDEFGHIJKLMNOPQRSTUVWXYZAB”
 
 Here is the implementation for shiftAlphabet, which you can just paste into your java file:
@@ -51,17 +51,17 @@ Traditionally, encrypted messages are broken into equal-length chunks, separated
 
 Write a method called groupify which takes two parameters. The first parameter is the string that you want to break into groups. The second argument is the number of letters per group. The function will return a string, which consists of the input string broken into groups with the number of letters specified by the second argument. If there aren’t enough letters in the input string to fill out all the groups, you should “pad” the final group with x’s. So groupify(“HITHERE”, 2) would return “HI TH ER Ex”.
 
-You may assume that the input string is normalized.
-Note that we use lower-case ‘x’ here because it is not a member of the (upper-case) alphabet we’re working with. If we used upper-case ‘X’ here we would not be able to distinguish between an X that was part of the code and a padding X.
+- You may assume that the input string is normalized.
+- Note that we use lower-case ‘x’ here because it is not a member of the (upper-case) alphabet we’re working with. If we used upper-case ‘X’ here we would not be able to distinguish between an X that was part of the code and a padding X.
 
 ### Part 4 - Putting it all together
 Write a function called encryptString which takes three parameters: a string to be encrypted, an integer shift value, and a code group size. Your method should return a string which is its cyphertext equivalent. Your function should do the following:
 
-Call normalizeText on the input string.
-Call obify to obfuscate the normalized text.
-Call caesarify to encrypt the obfuscated text.
-Call groupify to break the cyphertext into groups of size letters.
-Return the result
+- Call normalizeText on the input string.
+- Call obify to obfuscate the normalized text.
+- Call caesarify to encrypt the obfuscated text.
+- Call groupify to break the cyphertext into groups of size letters.
+- Return the result
 
 ### Part 5 - Hacker Problem - Decrypt
 This part is not required for course credit.
@@ -74,4 +74,5 @@ So if you were to call
 
 String cyphertext = encryptString(“Who will win the election?”,  5, 3);
 String plaintext = decryptString(cyphertext, 5);
+
 … then you’ll get back the normalized input string “WHOWILLWINTHEELECTION”.
