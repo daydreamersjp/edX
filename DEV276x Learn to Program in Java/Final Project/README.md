@@ -30,9 +30,13 @@ This method should return a string indicating which direction the user chooses t
 6. Before you execute a move in any direction you need to make sure you can move that way according to the map. To do that you’ll need to use the following methods:
 
 myMap.canIMoveRight() // Returns true if the space to the right is free, false if there is a wall
+
 myMap.canIMoveLeft() // Returns true if the space to the left is free, false if there is a wall
+
 myMap.canIMoveUp() // Returns true if the space above is free, false if there is a wall
+
 myMap.canIMoveDown() // Returns true if the space below is free, false if there is a wall
+
 
 If you cannot move in that direction, notify the user there is wall in that direction and ask them to pick a new direction to move.
 
