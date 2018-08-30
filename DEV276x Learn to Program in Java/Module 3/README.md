@@ -1,4 +1,4 @@
-Part 1 - Normalize Text
+### Part 1 - Normalize Text
 The first thing we will do is normalize our input message so that it’s easier to work with.
 
 Write a method called normalizeText() which does the following:
@@ -13,7 +13,8 @@ normalizeText("This is some \"really\" great. (Text)!?")
 should return
 
 “THISISSOMEREALLYGREATTEXT”
-Part 2 - Caesar Cipher
+
+### Part 2 - Caesar Cipher
 Next we’ll be writing a Caesar Cipher. The Caesar cipher is just about the simplest encryption algorithm out there. A Caesar encription "shifts" each individual character forward by a certain number or "key". Each letter in the alphabet is shifted to the letter in the alphabet that is "key" places past the original letter. With a shift value of +1, the string “ILIKEZOOS” would be rendered as “JMJLFAPPT.”
 
 Write a method called caesarify that takes two parameters. The first argument is a string you want to encrypt, and the second is an integer that contains the shift value or "key". The function should return a string, which is the input string encrypted with the Caesar cypher using the shift value passed in its second argument. You may assume that the input string is normalized.
