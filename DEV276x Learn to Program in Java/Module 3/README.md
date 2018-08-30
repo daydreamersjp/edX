@@ -10,6 +10,7 @@ Write a method called normalizeText() which does the following:
 The call
 
 normalizeText("This is some \"really\" great. (Text)!?")
+
 should return
 
 “THISISSOMEREALLYGREATTEXT”
@@ -73,6 +74,7 @@ Now write a function called decryptString which takes three parameters: a string
 So if you were to call
 
 String cyphertext = encryptString(“Who will win the election?”,  5, 3);
+
 String plaintext = decryptString(cyphertext, 5);
 
 … then you’ll get back the normalized input string “WHOWILLWINTHEELECTION”.
