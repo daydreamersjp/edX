@@ -9,5 +9,7 @@ For this stage, you will need to do the following steps:
 1. Download "Maze.java" and make sure IT IS IN THE SAME FOLDER AS YOUR CODE
 2. Create a new MazeRunner class.
 3. Create a new "Maze" in your MazeRunner class like so:
+
 Maze myMap = new Maze();
+
 4. Welcome the user to Maze Runner and show them the current state of the Maze. Separate this intro out into a separate method called "intro()".
