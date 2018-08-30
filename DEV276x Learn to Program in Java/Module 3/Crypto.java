@@ -1,4 +1,4 @@
-public class test {
+public class Crypto {
     public static void main (String[] args) {
        System.out.println(encryptString("This is some \"really\" great. (Text)!?", 2, 3));
        System.out.println(decycriptString(encryptString("This is some \"really\" great. (Text)!?", 2, 3), 3));
