@@ -1,8 +1,10 @@
 import java.util.Scanner;
 public class MazeRunner_part1 {
   
+  Maze myMap = new Maze();
+  
   public static void main(String[] args) {
-    Maze myMap = new Maze();
+    
     intro();
     user_move(myMap);
     
@@ -14,17 +16,17 @@ public class MazeRunner_part1 {
     myMap.printMap();
   }
 
-  public static void user_move(Maze myMap) {
+  public static void user_move() {
     String input = new Scanner();
     
     System.out.print("Where would you like to move? (R, L, U, D) ");
     String move = input.next();
     if (move != "R" && move != "L" && move != "U" && move != "D") {
       System.out.println("Oops, wrong input. Try again!");
-      user_move(myMap);
+      user_move();
     } else if ( (move == "R" && myMap.canIMoveRight() == false) || (move == "L" && myMap.canIMoveLeft() == false) || (move == "U" && myMap.canIMoveUp() == false) || (move == "D" && myMap.canIMoveDown() == false) ){
       System.out.println("Sorry, you’ve hit a wall.");
-      user_move(myMap);      
+      user_move();      
     } else if (move == "R") {
       myMap.moveRight();
       myMap.printMap();
@@ -42,7 +44,7 @@ public class MazeRunner_part1 {
     if (myMap.didIWin() == true) {
       System.out.println("Congratulations, you made it out alive!");
     } else {
-      user_move(myMap);
+      user_move();
     }
   }
 
