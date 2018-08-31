@@ -6,7 +6,7 @@ public class MazeRunner_part1 {
   public static void main(String[] args) {
     
     intro();
-    user_move(myMap);
+    user_move();
     
   }
 
