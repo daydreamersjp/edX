@@ -21,19 +21,19 @@ public class MazeRunner_part1 {
 
         System.out.print("Where would you like to move? (R, L, U, D) ");
         String move = input.next();
-        if (move != "R" && move != "L" && move != "U" && move != "D") {
+        if (!move.equals("R") && !move.equals("L") && !move.equals("U") && !move.equals("D")) {
             System.out.println("Oops, wrong input. Try again!");
             user_move();
-        } else if ( (move == "R" && myMap.canIMoveRight() == false) || (move == "L" && myMap.canIMoveLeft() == false) || (move == "U" && myMap.canIMoveUp() == false) || (move == "D" && myMap.canIMoveDown() == false) ){
+        } else if ( (move.equals("R") && myMap.canIMoveRight() == false) || (move.equals("L") && myMap.canIMoveLeft() == false) || (move.equals("U") && myMap.canIMoveUp() == false) || (move.equals("D") && myMap.canIMoveDown() == false) ){
             System.out.println("Sorry, you’ve hit a wall.");
             user_move();
-        } else if (move == "R") {
+        } else if (move.equals("R")) {
             myMap.moveRight();
             myMap.printMap();
-        } else if (move == "L") {
+        } else if (move.equals("L")) {
             myMap.moveLeft();
             myMap.printMap();
-        } else if (move == "U") {
+        } else if (move.equals("U")) {
             myMap.moveUp();
             myMap.printMap();
         } else {
