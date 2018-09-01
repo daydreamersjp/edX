@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class test {
 
-    Maze myMap = new Maze();
+    static Maze myMap = new Maze();
 
     public static void main(String[] args) {
 
