@@ -1,13 +1,13 @@
 import java.util.Scanner;
 public class MazeRunner_part2 {
   
-  Maze myMap = new Maze();
+  static Maze myMap = new Maze();
   
   public static void main(String[] args) {
     
-    int moves = 0;
+    int moves_cnt = 0;
     intro();
-    user_move(move);
+    user_move(move_cnt);
     
   }
 
@@ -17,57 +17,57 @@ public class MazeRunner_part2 {
     myMap.printMap();
   }
 
-  public static void user_move(int moves) {
+  public static void user_move(int moves_cnt) {
     String input = new Scanner();
     
     System.out.print("Where would you like to move? (R, L, U, D) ");
     String move = input.next();
-    if (move != "R" && move != "L" && move != "U" && move != "D") {
+    if (!move.equals("R") && !move.equals("L") && !move.equals("U") && !move.equals("D")) {
       System.out.println("Oops, wrong input. Try again!");
-      user_move(moves);
-    } else if ( (move == "R" && myMap.canIMoveRight() == false) || (move == "L" && myMap.canIMoveLeft() == false) || (move == "U" && myMap.canIMoveUp() == false) || (move == "D" && myMap.canIMoveDown() == false) ){
+      user_move(moves_cnt);
+    } else if ( (move.equals("R") && myMap.canIMoveRight() == false) || (move.equals("L") && myMap.canIMoveLeft() == false) || (move.equals("U") && myMap.canIMoveUp() == false) || (move.equals("D") && myMap.canIMoveDown() == false) ){
       System.out.println("Sorry, you’ve hit a wall.");
-      user_move(moves);      
-    } else if (move == "R") {
+      user_move(moves_cnt);      
+    } else if (move.equals("R")) {
       myMap.moveRight();
-      moves++;
+      moves_cnt++;
       myMap.printMap();
-      movesMessage(moves);
-    } else if (move == "L") {
+      movesMessage(moves_cnt);
+    } else if (move.equals("L")) {
       myMap.moveLeft();
-      moves++;
+      moves_cnt++;
       myMap.printMap();
       movesMessage(moves);
-    } else if (move == "U") {
+    } else if (move.equals("U")) {
       myMap.moveUp();
-      moves++;
+      moves_cnt++;
       myMap.printMap();
-      movesMessage(moves);
+      movesMessage(moves_cnt);
     } else {
       myMap.moveDown();
-      moves++;
+      moves_cnt++;
       myMap.printMap();
-      movesMessage(moves);
+      movesMessage(moves_cnt);
     }
     
     if (myMap.didIWin() == true) {
       System.out.println("Congratulations, you made it out alive!");
-      System.out.println("and you did it in " + moves + " moves");
-    } else if (moves == 100) {
+      System.out.println("and you did it in " + moves_cnt + " moves");
+    } else if (moves_cnt == 100) {
       System.out.println("Sorry, but you didn't escape in time- you lose!");
     } else {
-      user_move(moves);
+      user_move(moves_cnt);
     }
   }
   
   public static String movesMessage(int moves) {
-    if (moves == 50) {
+    if (moves_cnt == 50) {
       System.out.println("Warning: You have made 50 moves, you have 50 remaining before the maze exit closes");
-    } else if (moves == 75) {
+    } else if (moves_cnt == 75) {
       System.out.println("Alert! You have made 75 moves, you only have 25 moves left to escape.");
-    } else if (moves == 90) {
+    } else if (moves_cnt == 90) {
       System.out.println("DANGER! You have made 90 moves, you only have 10 moves left to escape!!");
-    } else if (moves == 100) {
+    } else if (moves_cnt == 100) {
       System.out.println("Oh no! You took too long to escape, and now the maze exit is closed FOREVER >:[");
     }       
   }  
