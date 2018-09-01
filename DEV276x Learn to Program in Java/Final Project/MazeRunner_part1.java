@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class test {
+public class MazeRunner_part1 {
 
     static Maze myMap = new Maze();
 
