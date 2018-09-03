@@ -14,7 +14,8 @@ To do this you should create a method that prints out the above by looping over 
 ### Step 2 – Deploy player’s ships
 
 Once you have your ocean map, you'll need to ask the user where they would like to place their ships. The player should deploy 5 ships. A ship will be stored in a single index of the array as a special character. To place the user's ships they need to tell you the coordinates of where the ship should be placed and you need to update the ocean map to reflect their choices. Remember you'll need to use a Scanner to allow the user to enter in input.
-'''
+
+```java
 import java.util.Scanner; // you must import Scanner to use it
 
 public class BattleShipsGame {
@@ -32,7 +33,8 @@ public class BattleShipsGame {
         int y = input.nextInt();
     }
 }
-'''
+```
+
 As the user is telling you where to place their ships you need to check if that is an appropriate location:
 
 - you can NOT place two or more ships on the same location
