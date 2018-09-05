@@ -19,6 +19,7 @@ You should eliminate as much redundancy as possible by letting your constructors
 
 ### Methods
 | Method to implement |	parameter |	return |	description |
+| --- | --- | --- | --- |
 | getNumerator() |	none |	int |	exposes the value of the numerator field to the user |
 | getDenominator() |	none |	int |	exposes the value of the denominator field to the user |
 | toString() |	none |	String |	"numerator/denominator", a String representation of the Fraction |
@@ -47,6 +48,7 @@ return a
 Here is an example of how it would work if a is 105 and b is 147.
 
 | Loop Iteration |	Value of a at end of loop run |	Value of b at end of loop run |	a % b |
+| --- | --- | --- | --- |
 | Pre-Loop |	105 |	147	 | |
 | 1 |	147 |	105 |	105 % 147 = 105 |
 | 2 |	105 |	42 |	147 % 105 = 147 - 105 = 42 |
