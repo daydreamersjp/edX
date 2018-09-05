@@ -30,10 +30,10 @@ You should eliminate as much redundancy as possible by letting your constructors
 | equals() |	Object other |	boolean |	must take in an "Object" to properly override the Object class's equals method, but should ultimately check if two fractions are equal |
 | toLowestTerms() |	none |	none |	converts the current fraction to the lowest terms |
 | gcd() |	int num, int den |	int |	takes in two ints and determines the greatest common divisor of the two ints, should be a static method |
-### equals()
+#### equals()
 Override the Object equals() method so that it accurately determines whether or not two fractions are equal. In order to have it override, it has to take an Object as a parameter. Your method should check whether or not the parameter is an instanceof Fraction, since if it is not a Fraction it cannot be equal. Don’t forget to cast the parameter to a Fraction after you check if it is an Object of type Fraction so that you can access its variables. Two fractions are equal if they represent the same number (i.e. 3/6 = 1/2 and -2/3 = 2/-3).
 
-### toLowestTerms()
+#### toLowestTerms()
 To convert a fraction to lowest terms we have to determine the greatest common divisor (factor) between the numerator and denominator. The greatest common divisor of two numbers a and b, is the largest number that evenly divides both a and b.
 
 The Euclidean Algorithm is a fast method for determining the GCD of two numbers. Here is pseudocode for its implementation:
@@ -52,7 +52,7 @@ Here is an example of how it would work if a is 105 and b is 147.
 | 2 |	105 |	42 |	147 % 105 = 147 - 105 = 42 |
 | 3 |	42 |	21 |	105 % 42 = 105 - 84 = 21 |
 | 4 |	21 |	0 |	42 % 21 = 0 |
-### gcd()
+#### gcd()
 Implement gcd() as a public static method that takes two integers as parameters and returns an int that is their greatest common divisor.
 
 ### Part 2 – FractionCalculator Class
