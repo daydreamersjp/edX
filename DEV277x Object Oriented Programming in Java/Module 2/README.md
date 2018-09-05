@@ -89,6 +89,7 @@ Some things to be mindful of when implementing the **validFraction()** method:
     - Both substrings must be non-empty.
     - Both must be entirely made of numbers.
     - The denominator cannot be "0".
+
 **Hint 1**: It may be useful to create a helper method isNumber() that takes a String as input and returns true if every character in the String is a number 0-9 and false otherwise. This method can also check for empty strings. 
 
 **Hint 2**: Once you determine whether or not the Strings are numbers, you may find the Integer.parseInt() method helpful.
