@@ -59,3 +59,19 @@ Implement gcd() as a public static method that takes two integers as parameters 
 
 ### Part 2 – FractionCalculator Class
 In this section, you will implement a FractionCalculator class that has a main method and three helper methods. Here is a screenshot from a sample run:
+
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/afafc9b3efb47b2c7f38e80ad77a69b5/asset-v1:Microsoft+DEV277x+2T2018+type@asset+block/1-sampleOutput.png)
+
+Your program should be robust so that it if the user enters invalid input it will continue to re-prompt them until it is valid. Here is an example run where the user is confused and enters invalid input:
+
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/3d04cef31140243e34115b81cff6f500/asset-v1:Microsoft+DEV277x+2T2018+type@asset+block/2-inputValidation.png)
+
+### Methods
+| Method to implement |	parameter |	return |	description |
+| --- | --- | --- | --- |
+| getOperation() |	Scanner input |	String |	Asks the user to enter in a valid mathematical operation. If the user enters anything except "+", "-", "/", "*", "=", "q", or "Q" it should re-prompt them until there is valid input.			|
+| validFraction() |	String input |	boolean |	returns true if the parameter is in the form "a/b" where a is any int and b is any positive int |
+| getFraction() |	Scanner input |	Fraction |	It prompts the user for a String that is a validFraction. If they enter any thing that is not a valid Fraction, it should re-prompt them until it is valid |
+
+### getOperation()
+Here is example output from a call to getOperation():
