@@ -73,5 +73,44 @@ Your program should be robust so that it if the user enters invalid input it wil
 | validFraction() |	String input |	boolean |	returns true if the parameter is in the form "a/b" where a is any int and b is any positive int |
 | getFraction() |	Scanner input |	Fraction |	It prompts the user for a String that is a validFraction. If they enter any thing that is not a valid Fraction, it should re-prompt them until it is valid |
 
-### getOperation()
-Here is example output from a call to getOperation():
+#### getOperation()
+Here is example output from a call to **getOperation()**:
+
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/ccef855a6e707d79cd3c42d0e404d86e/asset-v1:Microsoft+DEV277x+2T2018+type@asset+block/3-getFraction.png)
+
+At the end of this run, getOperation would have returned “*”.
+
+#### validFraction()
+Some things to be mindful of when implementing the **validFraction()** method:
+
+- The first character may or may not be a "-" character. If a negative shows up anywhere else, then it is not a valid fraction. It may be helpful to remove the "-" character if there is one.
+- If there is no "/" character, then every character in the string must be a number (if you removed the "-" sign).
+- If there is a "/" character, then it may be helpful to create substrings for the numerator and denominator.
+    - Both substrings must be non-empty.
+    - Both must be entirely made of numbers.
+    - The denominator cannot be "0".
+**Hint 1**: It may be useful to create a helper method isNumber() that takes a String as input and returns true if every character in the String is a number 0-9 and false otherwise. This method can also check for empty strings. 
+
+**Hint 2**: Once you determine whether or not the Strings are numbers, you may find the Integer.parseInt() method helpful.
+
+#### getFraction()
+Here is example output from a call to **getFraction()**. If the user enters any thing that is not a valid Fraction, it should re-prompt them until it is 
+
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/ccef855a6e707d79cd3c42d0e404d86e/asset-v1:Microsoft+DEV277x+2T2018+type@asset+block/3-getFraction.png)
+
+ This call would return a new Fraction object equal to -31/1. No user input should throw an exception! If you are getting exceptions, then it is likely your validFraction method isn’t correct.
+
+### Part 3 - Putting it all together!
+1. Write a short introduction method that describes the calculator program and welcomes your user
+2. Ask the user to enter in an operation
+3. As long as the user enters something that’s not "q" or "Q" when asked for an operation you should run the calculator
+4. Get two fractions from the user and then perform whichever operation they ask for
+5. Print the result of the operation
+Here is an example run of the entire program: 
+
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/afafc9b3efb47b2c7f38e80ad77a69b5/asset-v1:Microsoft+DEV277x+2T2018+type@asset+block/4-sampleRun.png)
+
+### Part 4 - Hacker Problem - FractionCalculatorAdvanced
+Create another class called FractionCalculatorAdvanced. You may cut and paste useful methods from FractionCalculator. The key difference between FractionCalculator and FractionCalculatorAdvanced is that the user can enter in their operations on a single line. Allow the user to enter their input onto a single line. Your program must be robust so that if the user enters in invalid input, it will re-prompt them until they either enter a q to quit or a valid operation. It is possible to do this without try/catch, but it is quite difficult. You may read about try/catch blocks here: [http://beginnersbook.com/2013/04/try-catch-in-java/](http://beginnersbook.com/2013/04/try-catch-in-java/). Here is sample output from a run of FractionCalculatorAdvanced:
+
+![](https://prod-edxapp.edx-cdn.org/assets/courseware/v1/48d1e947ebeeb8abd420d6319f27cdef/asset-v1:Microsoft+DEV277x+2T2018+type@asset+block/5-fracCalcAdv.png)
