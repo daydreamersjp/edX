@@ -9,10 +9,14 @@ public class TechnicalEmployee extends Employee {
         this.employeeID++;
     }
     
+    public int getSuccessfulCheckins() {
+        return this.successfulCheckins;
+    }    
+    
     public String employeeStatus() {
         String mt2 = "";
-        if (this.successfulCheckins > 1) { mt2 = "s"; }
-        System.out.println(super.employeeID + " " + this.name + " has " + this.successfulCheckins + " successful check in" + mt2);
+        if (this.getSuccessfulCheckins() > 1) { mt2 = "s"; }
+        System.out.println(super.employeeID + " " + this.name + " has " + this.getSuccessfulCheckins() + " successful check in" + mt2);
     }
 
 }
