@@ -1,13 +1,15 @@
-public class Employee {
+public abstract class Employee {
 
     private String name;
     private double baseSalary;
+    private static int employeeID = 0;
 
     // Should construct a new employee object and take in two parameters,
     // one for the name of the user and one for their base salary
     public Employee(String name, double baseSalary) {
         this.name = name;
         this.baseSalary = baseSalary;
+        this.employeeID++;
     }
 
     // Should return the employee's current salary
@@ -24,7 +26,7 @@ public class Employee {
     // on behalf of the employee at the time they are constructed.
     // The first ever employee should have an ID of "1", the second "2" and so on
     public int getEmployeeID() {
-
+        return employeeID;
     }
 
     // Should return a reference to the Employee object that represents this employee's manager
@@ -35,18 +37,20 @@ public class Employee {
 
     // Should return true if the two employee IDs are the same, false otherwise
     public boolean equals(Employee other) {
+        if (this.getEmployeeID() == other.getEmployeeID()) { return true; }
+        else { return false; }
     }
 
     // 	Should return a String representation of the employee
     // that is a combination of their id followed by their name. Example: "1 Kasey"
     public String toString() {
-
+        return this.getEmployeeID() + " " + this.getName();
     }
 
     // Should return a String representation of that Employee's current status.
     // This will be different for every subclass of Employee
-    public String employeeStatus() {
-
-    }
+    public abstract String employeeStatus() ;
 
 }
+
+
