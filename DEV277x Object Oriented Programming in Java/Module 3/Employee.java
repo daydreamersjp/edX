@@ -30,10 +30,9 @@ public abstract class Employee {
     }
 
     // Should return a reference to the Employee object that represents this employee's manager
-    public Employee getManager() {
-
-
-    }
+//    public Employee getManager() {
+//        ////////////////////////////????????????????
+//    }
 
     // Should return true if the two employee IDs are the same, false otherwise
     public boolean equals(Employee other) {
