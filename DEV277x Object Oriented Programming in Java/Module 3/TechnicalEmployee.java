@@ -16,7 +16,7 @@ public class TechnicalEmployee extends Employee {
     public String employeeStatus() {
         String mt2 = "";
         if (this.getSuccessfulCheckins() > 1) { mt2 = "s"; }
-        System.out.println(super.employeeID + " " + this.name + " has " + this.getSuccessfulCheckins() + " successful check in" + mt2);
+        System.out.println(this.getEmployeeID() + " " + this.getName() + " has " + this.getSuccessfulCheckins() + " successful check in" + mt2);
     }
 
 }
