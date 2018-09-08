@@ -1,19 +1,22 @@
-public class BusinessEmployee {
-    
-    private static double budget = 0.0;
-    
-    public TechnicalEmployee(String name) {
-        this.name = name;
-        this.baseSalary = 50000;
-        this.employeeID++;
-    }    
-    
+public class BusinessEmployee extends Employee{
+
+    private static double budget;
+
+    public BusinessEmployee(String name) {
+        super(name, 50000);
+        this.budget = 10000;
+    }
+
     public double getBudget() {
-    //////////////////////////
+        return this.budget;
+    }
+
+    public void useBudget(double budgetUse) {
+        this.budget -= budgetUse;
     }
 
     public String employeeStatus() {
-        System.out.println(super.employeeID + " " + this.name + " with a budget of " + this.getBudget());
-    }    
+        return this.getEmployeeID() + " " + this.getName() + " with a budget of " + this.getBudget();
+    }
 
 }
