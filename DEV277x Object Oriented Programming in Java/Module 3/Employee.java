@@ -1,15 +1,17 @@
-public abstract class Employee {
+public class Employee {
 
     private String name;
     private double baseSalary;
-    private static int employeeID = 0;
+    private int employeeID;
+    private static int employeeIDseq = 0;
 
     // Should construct a new employee object and take in two parameters,
     // one for the name of the user and one for their base salary
     public Employee(String name, double baseSalary) {
         this.name = name;
         this.baseSalary = baseSalary;
-        this.employeeID++;
+        this.employeeIDseq++;
+        this.employeeID = employeeIDseq;
     }
 
     // Should return the employee's current salary
@@ -26,13 +28,13 @@ public abstract class Employee {
     // on behalf of the employee at the time they are constructed.
     // The first ever employee should have an ID of "1", the second "2" and so on
     public int getEmployeeID() {
-        return employeeID;
+        return this.employeeID;
     }
 
-    // Should return a reference to the Employee object that represents this employee's manager
-//    public Employee getManager() {
-//        ////////////////////////////????????????????
-//    }
+//     Should return a reference to the Employee object that represents this employee's manager
+    public Employee getManager() {
+        return new Employee("Steve", 1000000);
+    }
 
     // Should return true if the two employee IDs are the same, false otherwise
     public boolean equals(Employee other) {
@@ -48,8 +50,6 @@ public abstract class Employee {
 
     // Should return a String representation of that Employee's current status.
     // This will be different for every subclass of Employee
-    public abstract String employeeStatus() ;
+    public String employeeStatus() { return ""; }
 
 }
-
-
