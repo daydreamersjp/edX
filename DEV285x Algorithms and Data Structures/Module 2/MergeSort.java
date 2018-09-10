@@ -6,12 +6,16 @@ public class MergeSort {
         int[] inputArray2 = {5, 2, 7, -1, 100};
         int[] inputArray3 = {12, 4, 8, 1, -10, 12, 1, 2};
 
-        System.out.println(Arrays.toString(mergeSort(inputArray1)));
-        System.out.println(Arrays.toString(mergeSort(inputArray2)));
-        System.out.println(Arrays.toString(mergeSort(inputArray3)));
+        System.out.println(Arrays.toString(mergeSort(inputArray1))); // Sorting array with even elements
+        System.out.println(Arrays.toString(mergeSort(inputArray2))); // Sorting array with odd elements
+        System.out.println(Arrays.toString(mergeSort(inputArray3))); // Sorting array with the same amount in elements
     }
 
     public static int[] mergeSort(int[] arr) {
+
+        if (arr.length == 1) {
+            return arr;
+        }        
         
         int[] arr1;
         int[] arr2;
