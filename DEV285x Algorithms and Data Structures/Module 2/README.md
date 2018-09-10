@@ -7,6 +7,7 @@ Detail of Merge Sort can be found here: https://en.wikipedia.org/wiki/Merge_sort
 
 
 
+
 BinarySearch.java and BinarySearch2.java implements Binary Search, the former one is my code and the latter is in the edX sample code.
 
 Details of Binary Search can be seen here: https://en.wikipedia.org/wiki/Binary_search_algorithm
