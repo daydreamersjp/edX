@@ -5,9 +5,7 @@ MergeSort.java implements Merge Sort using recursive methods.
 
 Detail of Merge Sort can be found here: https://en.wikipedia.org/wiki/Merge_sort
 
-__
-__
-__
+-----------
 
 BinarySearch.java and BinarySearch2.java implements Binary Search, the former one is my code and the latter is in the edX sample code.
 
