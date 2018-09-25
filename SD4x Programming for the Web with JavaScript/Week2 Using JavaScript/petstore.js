@@ -1,4 +1,4 @@
-
+'use strict';
 /**
  * This function should calculate the total amount of pet food that should be
  * ordered for the upcoming week.
@@ -9,10 +9,12 @@
  * 				 week, or -1 if the numAnimals or avgFood are less than 0 or non-numeric
  */
 function calculateFoodOrder(numAnimals, avgFood) {
-	if (numAnimals < 0 || avgFood < 0 || isNaN(numAnimals) || isNaN(avgFood)){
+	var numAnimals_conv = Number(numAnimals);
+	var avgFood_conv = Number(avgFood);
+	if (numAnimals_conv < 0 || avgFood_conv < 0 || isNaN(numAnimals_conv) || isNaN(avgFood_conv)){
 		return -1;
 	} else {
-		return numAnimals * avgFood;
+		return numAnimals_conv * avgFood_conv;
 	}
 }
 
@@ -28,6 +30,8 @@ function calculateFoodOrder(numAnimals, avgFood) {
 function mostPopularDays(week) {
 	if (week == null) {
 		return null;
+	} else if (week.length == 0) { 
+		return null; 
 	} else {
 		var sumDays = [0, 0, 0, 0, 0, 0, 0];
 		
@@ -69,13 +73,7 @@ function mostPopularDays(week) {
  *         empty array if the array's lengths are unequal or zero, or if any array is null.
  */
 function createAnimalObjects(names, types, breeds) {
-	var res = [];
-	for (var i = 0; i < names.length; i++) {
-		res.push(Animal(names[i], types[i], breeds[i]));
-	}
-	return Animal("John", "Cat", 10);
-		
-		
+
 	if (names == null || types == null || breeds == null){
 		return [];
 	} else if (names.length == 0 || types.length == 0 || breeds.length == 0) {
@@ -85,7 +83,7 @@ function createAnimalObjects(names, types, breeds) {
 	} else {
 		var res = [];
 		for (var i = 0; i < names.length; i++) {
-			res.push(Animal(names[i], types[i], breeds[i]));
+			res.push(new Animal(names[i], types[i], breeds[i]));
 		}
 		return res;
 	}		
@@ -132,4 +130,3 @@ function Animal (name, type, breed) {
 function helloworld() {
     return 'hello world!';
 }
-
