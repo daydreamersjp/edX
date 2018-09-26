@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<!-- Define HTML -->
+	<button id="clickMe">Click Me!</button>
+	<p>
+	You've clicked the button <span id="clickTimes">never</span>.
+	
+	<p style="margin-bottom:50px"></p>
+	
+	<button id="clickMe2">Click Me #2!</button>
+	<p>
+	You've clicked the button #2 <span id="clickTimes2">never</span>.
+	
+	<p style="margin-bottom:50px"></p>
+		
+	<input id="inputList"></input>
+	<p>
+	<button id="clearList">Clear List</button>
+	<p>
+	<ul>
+		<span id="createdList"></span>
+	</ul>
+	
+	
+	<!-- Define JS Scripts -->
+	<script>
+	
+		<!-- Without JQuery -->
+		var clicks = 0;
+		
+		function clickHandler() {
+			clicks++;
+
+			if (clicks == 1) {
+				document.getElementById('clickTimes').innerHTML = 'once';
+			} else {
+				document.getElementById('clickTimes').innerHTML = clicks + ' times';
+			}
+		}
+		
+		document.getElementById('clickMe').addEventListener('click', clickHandler);
+		
+		<!-- With JQuery -->
+		var clicks2 = 0;
+		
+		function clickHandler2() {
+			clicks2++;
+			
+			if (clicks2 == 1) {
+				$('#clickTimes2').html('once');
+			} else {
+				$('#clickTimes2').html(clicks2 + ' times');
+			}
+		}
+		
+		$('#clickMe2').click(clickHandler2);
+		
+		<!-- Create List -->
+		function keyPressHandler(e) {
+			if (e.keyCode == 13) {
+				$('#createdList').append('<li>' + $('#inputList').val() + '</li>');
+				$('#inputList').val('');
+			}
+		}
+		$('#inputList').keyup(keyPressHandler);		
+		
+		function clearList() {
+			$('#createdList').html('');
+		}
+		$('#clearList').click(clearList);
+		
+		
+	</script>
+	
+</body>
+
+
+</html>
