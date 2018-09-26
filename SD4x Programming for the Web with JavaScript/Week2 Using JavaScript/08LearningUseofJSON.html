@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+	You have accessed this page <span id="report"></span> times.
+	<p>
+	Your last visit was <span id="lastVisitDate"></span>.
+	<p>
+	This visit is <span id="thisVisitDate"></span>
+	
+	
+	<script>
+		var timesVisited = 0;
+		var lastVisitDate = 'never';
+		
+		if (localStorage.lastVisit) {
+			var lastVisit = JSON.parse(localStorage.lastVisit);
+			timesVisited = lastVisit.numVisits;
+			lastVisitDate = lastVisit.date;
+		}
+		
+		document.getElementById('lastVisitDate').innerHTML = lastVisitDate;
+		
+		timesVisited++;
+		document.getElementById('report').innerHTML = timesVisited;
+		
+		var myLastVisit = { };
+		myLastVisit.date = new Date();
+		myLastVisit.numVisits = timesVisited;
+		localStorage.lastVisit = JSON.stringify(myLastVisit);
+		
+		document.getElementById('thisVisitDate').innerHTML = myLastVisit.date;
+	</script>
+	
+</body>
+
+</html>
