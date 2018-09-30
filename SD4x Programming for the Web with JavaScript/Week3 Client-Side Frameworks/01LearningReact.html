@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="https://fb.me/react-0.14.3.min.js"></script>
-	<script src="https://fb.me/react-dom-0.14.3.min.js"></script>
+	<title>Learning React</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+	<style>
+		#h1inline {
+			display: inline;
+		}
+	</style>
 </head>
 <body>
-	<!-- HTML Contents -->
 	<div id='container1'></div>
 	<p>
-	<div id='container2'></div>
+	<div id="container2"></div>
 	<p>
 	<div id='container3'></div>
 	<p>
 	<div id='container4'></div><div id='container5'></div>
 
 	<!-- Script Contents -->
-	<script type='text/jsx'>
+	<script type="text/jsx">
 	
-		<!-- No Component -->
-		ReactDOM.render(
+		// No Component
+		React.render(
 			<h1> Hello, World! </h1>,
 			document.getElementById('container1')
 		);
 		
-		<!-- Component Definition -->
+		// Component Definition
 		var HelloComponent = React.createClass ({
 			render: function() {
 				return (
 					<h1> Hello React! </h1>
-				);
+				)
 			}
 		});
-		ReactDOM.render(
+		React.render(
 			<HelloComponent />,
 			document.getElementById('container2')
 		);
 		
-		<!-- Component Definition ES6 -->
+		// Component Definition ES6
 		class HelloComponent3 extends React.Component {
 			render () {
 				return (
 					<h1> Hello ES6! </h1>
-				);
+				)
 			}
 		}
-		ReactDOM.render(
+		React.render(
 			<HelloComponent3 />,
 			document.getElementById('container3')
 		);
 		
-		<!-- Components using Property and State -->
+		// Components using Property and State
 		class HelloUser extends React.Component {
 			render () {
 				return (
-					<h1> Hello {this.props.name}!
-				);
-			);
+					<h1 id="h1inline"> Hello {this.props.name}! </h1>
+				)
+			}
 		}
 		class TimesViewed extends React.Component {
 			constructor(props) {
 				super(props);
 				var timesViewed = 0;
-				if (localStroage.timesViewed) {
+				if (localStorage.timesViewed) {
 					timesViewed = localStorage.timesViewed;
 				}
 				timesViewed++;
@@ -70,20 +75,21 @@
 			}
 			render () {
 				return (
-					{this.state.numViews) </h1>
+					<h1 id="h1inline"> You visited this page {this.state.numViews} times! </h1>
 				)
 			}
 		}
 		
-		RenderDOM.render(
+		React.render(
 			<HelloUser name="Aya" />,
 			document.getElementById('container4')
 		);
-		RenderDOM.render(
+		React.render(
 			<TimesViewed />,
 			document.getElementById('container5')
 		);
 		
 	</script>
+
 </body>
 </html>
