@@ -1,4 +1,5 @@
 // PointersLab.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// WARNING!!: This code does not work. Person class generates errors.
 //
 
 #include <iostream>
