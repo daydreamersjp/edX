@@ -30,6 +30,6 @@ In the main() method:
 4. Instantiate at least one Teacher object.
 5. Add that Teacher object to your Course object
 6. Using cout statements where appropriate, follow these instructions:
-..1. Output the name of the course
-..2. Call the GradeStudent() method on the Teacher object
-..3. Leave your application open and answer the Lab assessment questions
+   1. Output the name of the course
+   2. Call the GradeStudent() method on the Teacher object
+   3. Leave your application open and answer the Lab assessment questions
